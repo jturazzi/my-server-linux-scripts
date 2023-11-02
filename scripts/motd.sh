@@ -1,8 +1,6 @@
 #!/bin/bash
 # curl -L https://jturazzi.github.io/my-server-linux-scripts/scripts/motd.sh | bash
 
-#!/bin/bash
-
 if ! command -v sudo &> /dev/null; then
     echo "Erreur : sudo n'est pas installé sur ce système. Le script nécessite sudo pour s'exécuter."
     exit 1
