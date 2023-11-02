@@ -17,6 +17,6 @@ echo -n | sudo tee /etc/motd
 sudo rm /etc/update-motd.d/*
 sudo tee -a /etc/update-motd.d/00-motd > /dev/null <<EOT 
 #!/bin/sh
-neofetch
+neofetch --config /etc/neofetch/config.conf
 EOT
 sudo chmod +x /etc/update-motd.d/00-motd
