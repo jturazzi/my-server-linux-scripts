@@ -13,6 +13,8 @@ sudo adduser $var1
 read -p "Voulez-vous avoir l'accès sudo ? (oui/non) " response
 if [ "$response" = "oui" ]; then
     sudo usermod -aG sudo $var1
+    echo "$var1 ALL=(ALL) NOPASSWD: ALL" | sudo tee -a /etc/sudoers
+
     echo "L'accès sudo vous a été accordé."
 else
     echo "L'accès sudo n'a pas été accordé."
