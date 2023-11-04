@@ -8,7 +8,7 @@ fi
 
 sudo apt install neofetch -y
 sudo mkdir -p /etc/neofetch
-sudo sh -c 'curl -s https://jturazzi.github.io/my-server-linux-scripts/neofetch/config.conf > /etc/neofetch/config.conf'
+sudo sh -c 'curl -s https://jturazzi.github.io/my-server-linux-scripts/ressources/neofetch/config.conf > /etc/neofetch/config.conf'
 mkdir -p ~/.config/neofetch/ && [ -e ~/.config/neofetch/config.conf ] && rm ~/.config/neofetch/config.conf
 ln -s /etc/neofetch/config.conf ~/.config/neofetch/config.conf
 echo -n | sudo tee /etc/motd
