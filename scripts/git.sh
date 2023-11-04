@@ -1,5 +1,5 @@
 #!/bin/bash
-# curl -L https://jturazzi.github.io/my-server-linux-scripts/scripts/git.sh | bash
+# bash <(curl -sSL https://jturazzi.github.io/my-server-linux-scripts/scripts/git.sh)
 
 echo -e -n "- Git - Entrer votre prénom et nom : "
 read var1

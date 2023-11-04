@@ -1,5 +1,5 @@
 #!/bin/bash
-# curl -L https://jturazzi.github.io/my-server-linux-scripts/scripts/ssh-root-login.ssh | bash
+# bash <(curl -sSL https://jturazzi.github.io/my-server-linux-scripts/scripts/ssh-root-login.ssh)
 
 if ! command -v sudo &> /dev/null; then
     echo "Erreur : sudo n'est pas installé sur ce système. Le script nécessite sudo pour s'exécuter."
